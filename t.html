@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#000',
+                        white: '#fff',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        btn{
+            @apply font-bold rounded py-2 px-4;
+        }
+        .btn-black {
+            @apply bg-black text-white;
+        }
+    </style>    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="px-2 flex justify-between">
+            <h3>
+                <span data-text="♥"></span>
+                <span>yiya</span>
+            </h3>
+            <menu>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Cliente</a></li>
+            </menu>
+            <button class="btn btn-black">Contactos</button>
+        </nav>
+        <div></div>
+    </header>
+</body>
+</html>

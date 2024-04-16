@@ -1,0 +1,79 @@
+header{
+    background-image: url("../img/slider.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+    header > nav{
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > nav > h3:first-child{
+        font-weight: 800;
+        color: white;
+        text-transform: uppercase;
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        font-size: 2.0em;
+    }
+
+    span[data-text]::after{
+        content: attr(data-text);
+        color: transparent;
+        background-image: linear-gradient(45deg,
+        #ffaaaa, 
+        #ffca96, 
+        #ffff00, 
+        #9ffd9f,
+        magenta, 
+        #b9ffff, 
+        #b86cee,
+        #c97fe9);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: rainbow 1s infinite;
+        font-size: 1.5em;
+        font-weight: 800;
+    }
+    
+        @keyframes rainbow {
+            0% {
+                background-position: 0 50%;
+            }
+            100% {
+                background-position: 200% 50%;
+            }
+        }
+    
+        span[data-text] + span {
+            text-shadow: 0 2px 0 cyan,
+                         2px 0 0 magenta,
+                        -2px -2px 0 yellow;
+        }
+
+    header > nav > menu {
+        display: flex;
+        gap: 1em;
+        
+        align-items: center;
+        font-weight: 600;
+    }
+
+    header > nav > menu a {
+        color: white;
+        transition: font-size 0.3s ease, color .9s ease;
+    }
+
+    header > nav > menu a:hover {
+        color: #ff00b3;
+        font-size: 1.2em;
+    }
+
+
